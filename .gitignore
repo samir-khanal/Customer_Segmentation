@@ -1,0 +1,10 @@
+env/
+__pycache__/
+# Jupyter
+.ipynb_checkpoints/
+# IDE
+.vscode/
+.idea/
+processed_data/*.ipynb
+# Model Files (if large)
+/backend/models/

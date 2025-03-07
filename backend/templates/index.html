@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Segmentation API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+        }
+        .endpoint {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Segmentation API</h1>
+        <p>Welcome to the Customer Segmentation Prediction API!</p>
+        <p>To make a prediction, send a **POST request** to:</p>
+        <p class="endpoint">/predict</p>
+        <p>with the following JSON format:</p>
+        <pre>
+        {
+            "Recency": 120,
+            "Frequency": 15,
+            "Monetary": 5000,
+            "Total_Returns": 2
+        }
+        </pre>
+        <p>It will return a JSON response with the predicted cluster.</p>
+    </div>
+</body>
+</html>
